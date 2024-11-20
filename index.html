@@ -1,0 +1,45 @@
+<html>
+<head>
+ <link rel="stylesheet" href="styles.css">
+
+  <title>Cash Register App</title>
+  <script src="script.js" ></script>
+</head>
+<body>
+<h1><center>Cash Register Application</center></h1>
+<br>
+
+<center><div id="change-due"></div></center>
+<br>
+
+<center>
+<div>
+<label for="cash">Enter cash from customer:</label>
+<input id="cash" type="number"></input>
+<br>
+<br>
+<button id="purchase-btn" type="submit" onclick="calculate()"><strong>Purchase</strong></button>
+</div>
+</center>
+<br>
+<br>
+
+
+<center>
+
+  <div class="total"><script type="text/javascript">
+  document.write("Total: $"+price)
+  </script></div>
+
+<div class="change">
+<p><strong>Change in Drawer</strong></p>
+<script type="text/javascript">
+  for(let i=0;i<cid.length;i++){
+    document.write(cid[i]+"<br>")
+  }
+  </script>
+  
+</div>
+</center>
+</body>
+</html>
